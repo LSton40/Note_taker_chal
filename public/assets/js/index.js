@@ -26,27 +26,33 @@ const hide = (elem) => {
 let activeNote = {};
 
 const getNotes = () =>
-  fetch('/api/notes', {
+  fetch('/notes', { //deleted /api LS
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
+      'Accept': 'application/json' //added. Need JSON output? LS
     },
-  });
+  })
+    .then(res => res.json()) //converting results to JSON, but cue error line 126
+    .then(data => console.log(data)); // Just an added console log LS
 
 const saveNote = (note) =>
-  fetch('/api/notes', {
+  fetch('/notes', { //deleted /api LS
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'Accept': 'application/json' //added. Need JSON output? LS
     },
     body: JSON.stringify(note),
-  });
+  })
+    .then(res => res.json()); //added. POST to JSON?
 
 const deleteNote = (id) =>
-  fetch(`/api/notes/${id}`, {
+  fetch(`/notes/${id}`, { //deleted /api LS
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
+      'Accept': 'application/json' //added. Need JSON output? LS
     },
   });
 
@@ -102,7 +108,7 @@ const handleNoteView = (e) => {
   renderActiveNote();
 };
 
-// Sets the activeNote to and empty object and allows the user to enter a new note
+// Sets the activeNote to an empty object and allows the user to enter a new note
 const handleNewNoteView = (e) => {
   activeNote = {};
   renderActiveNote();
