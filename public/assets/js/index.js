@@ -30,29 +30,26 @@ const getNotes = () =>
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      'Accept': 'application/json' //added. Need JSON output? LS
+      'Accept': 'application/json'
     },
   })
-    // .then(res => res.json()) //converting results to JSON, but cue error line 126
-    // .then(data => console.log(data)); // Just an added console log LS
 
 const saveNote = (note) => 
   fetch('/api/notes', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Accept': 'application/json' //added. Need JSON output? LS
+      'Accept': 'application/json'
     },
     body: JSON.stringify(note),
   })
-    // .then(res => res.json()); //added. POST to JSON?
 
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
-      'Accept': 'application/json' //added. Need JSON output? LS
+      'Accept': 'application/json'
     },
   });
 
