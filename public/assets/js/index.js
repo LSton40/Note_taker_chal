@@ -26,18 +26,18 @@ const hide = (elem) => {
 let activeNote = {};
 
 const getNotes = () =>
-  fetch('/notes', { //deleted /api LS
+  fetch('/api/notes', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json' //added. Need JSON output? LS
     },
   })
-    .then(res => res.json()) //converting results to JSON, but cue error line 126
-    .then(data => console.log(data)); // Just an added console log LS
+    // .then(res => res.json()) //converting results to JSON, but cue error line 126
+    // .then(data => console.log(data)); // Just an added console log LS
 
-const saveNote = (note) =>
-  fetch('/notes', { //deleted /api LS
+const saveNote = (note) => 
+  fetch('/api/notes', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -45,10 +45,10 @@ const saveNote = (note) =>
     },
     body: JSON.stringify(note),
   })
-    .then(res => res.json()); //added. POST to JSON?
+    // .then(res => res.json()); //added. POST to JSON?
 
 const deleteNote = (id) =>
-  fetch(`/notes/${id}`, { //deleted /api LS
+  fetch(`/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',

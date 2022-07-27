@@ -13,6 +13,26 @@ app.use(express.json());
 app.use('/', routes); // Load routes
 
 
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../public/index.html'))
+//         // .then(data => {
+//         //     res.json(data)
+//         // })
+//         // .catch(err => console.log(err))
+    
+// })
+
+// app.get('/notes', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../public/notes.html'))
+//         // .then(data => {
+//         //     res.json(data)
+//         // })
+//         // .catch(err => console.log(err))
+// })
+
+
+
+
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
 });
