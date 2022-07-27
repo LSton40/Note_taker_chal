@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "title": "Note A",
+    "text": "This is a note.",
+    "id": "ff287acb-cc0e-450a-901b-6cfb2469c27d"
+  },
+  {
+    "title": "Note B",
+    "text": "This is another note.",
+    "id": "1d3714dc-5670-4f89-ba8b-0d113dd90bed"
+  },
+  {
+    "title": "Note 3",
+    "text": "This isn't so much a note as it is a comment",
+    "id": "87803f32-2303-4b99-918f-dc390e3d68bd"
+  },
+  {
+    "title": "4 Note",
+    "text": "This note says nothing",
+    "id": "5b95cd90-2ba1-4996-94ab-d7dd5d503ddd"
+  },
+  {
+    "title": "Red Fish",
+    "text": "Some fish does sound good at the moment.",
+    "id": "8bbd0662-6f32-41a0-83bf-6a6eb1be337b"
+  },
+  {
+    "title": "Blue Fish",
+    "text": "Maybe breaded, maybe grilled. Preferably salmon or trout, but some snapper or walleye doesn't sound so bad.",
+    "id": "2a179c4c-05b4-42c3-b28a-53ea622a860f"
+  },
+  {
+    "title": "A Møøse once bit my sister",
+    "text": "No realli! She was Karving her initials on the møøse with the sharpened end of an interspace tøøthbrush...\n",
+    "id": "51a0bbfe-040a-4d2f-979e-2d3a58f06a41"
+  },
+  {
+    "title": "Everything Bagel",
+    "text": "The previous note comes from some Monty Python inanity.\n\nOther notes inspired by Dr. Seuss and random neuron firings....",
+    "id": "aba2a528-25ae-48d9-aeca-25b5223670b0"
+  }
+]
