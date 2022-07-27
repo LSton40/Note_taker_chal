@@ -11,6 +11,11 @@ From the root page, click on the 'Get Started' button to direct the user to the 
 
 Project development involved writing a basic server.js file using Express.js as well as GET, POST, and DELETE requests to add functionality to the app, to read, write to, and remove data from a db.json file. A UUID package is also used to generate unique ids for the saved note files, necessary for retrieving and deleting saved notes.
 
+Link to app deployed on Heroku: [Deployed Heroku App](https://notetaker-lsutton.herokuapp.com/notes)
+
+[![notetaker-lsutton herokuapp com_notes](https://user-images.githubusercontent.com/103286445/181275567-a62cfce3-f126-4e78-8768-b99950ea55ba.png)](https://user-images.githubusercontent.com/103286445/181275567-a62cfce3-f126-4e78-8768-b99950ea55ba.png)
+
+
 ## Table of Contents  
 
 - [Installation](#installation)  
